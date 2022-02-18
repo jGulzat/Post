@@ -13,6 +13,16 @@
 		43D8F87D27BF495F00705873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D8F87B27BF495F00705873 /* Main.storyboard */; };
 		43D8F87F27BF496000705873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D8F87E27BF496000705873 /* Assets.xcassets */; };
 		43D8F88227BF496000705873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D8F88027BF496000705873 /* LaunchScreen.storyboard */; };
+		43D8F88B27BF4C0100705873 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F88A27BF4C0100705873 /* Alert.swift */; };
+		43D8F88E27BF4C3E00705873 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F88D27BF4C3E00705873 /* Post.swift */; };
+		43D8F89227BF4D1100705873 /* PostsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F89127BF4D1100705873 /* PostsVM.swift */; };
+		43D8F89527BF4E8100705873 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 43D8F89427BF4E8100705873 /* Alamofire */; };
+		43D8F89827BF4EF800705873 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 43D8F89727BF4EF800705873 /* SnapKit */; };
+		43D8F89D27BF4F8900705873 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F89C27BF4F8900705873 /* PostsVC.swift */; };
+		43D8F89F27BF4FA200705873 /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F89E27BF4FA200705873 /* PostDetailVC.swift */; };
+		43D8F8A127BF4FF000705873 /* PostTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F8A027BF4FF000705873 /* PostTVCell.swift */; };
+		43D8F8C927BF515E00705873 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F8C827BF515E00705873 /* Service.swift */; };
+		43D8F8CB27BF518900705873 /* PostTVManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D8F8CA27BF518900705873 /* PostTVManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,14 @@
 		43D8F87E27BF496000705873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43D8F88127BF496000705873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43D8F88327BF496000705873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D8F88A27BF4C0100705873 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		43D8F88D27BF4C3E00705873 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		43D8F89127BF4D1100705873 /* PostsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVM.swift; sourceTree = "<group>"; };
+		43D8F89C27BF4F8900705873 /* PostsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		43D8F89E27BF4FA200705873 /* PostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
+		43D8F8A027BF4FF000705873 /* PostTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVCell.swift; sourceTree = "<group>"; };
+		43D8F8C827BF515E00705873 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		43D8F8CA27BF518900705873 /* PostTVManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D8F89527BF4E8100705873 /* Alamofire in Frameworks */,
+				43D8F89827BF4EF800705873 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +76,13 @@
 		43D8F87427BF495F00705873 /* PostsTest */ = {
 			isa = PBXGroup;
 			children = (
+				43D8F8C727BF514F00705873 /* Manager */,
+				43D8F8A227BF4FFE00705873 /* Font */,
+				43D8F89927BF4F0B00705873 /* Post */,
+				43D8F88F27BF4CD900705873 /* ViewModel */,
+				43D8F88C27BF4C1F00705873 /* Model */,
 				43D8F87527BF495F00705873 /* AppDelegate.swift */,
+				43D8F88927BF4BF000705873 /* Extension */,
 				43D8F87727BF495F00705873 /* SceneDelegate.swift */,
 				43D8F87927BF495F00705873 /* ViewController.swift */,
 				43D8F87B27BF495F00705873 /* Main.storyboard */,
@@ -65,6 +91,72 @@
 				43D8F88327BF496000705873 /* Info.plist */,
 			);
 			path = PostsTest;
+			sourceTree = "<group>";
+		};
+		43D8F88927BF4BF000705873 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F88A27BF4C0100705873 /* Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		43D8F88C27BF4C1F00705873 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F88D27BF4C3E00705873 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43D8F88F27BF4CD900705873 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F89127BF4D1100705873 /* PostsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43D8F89927BF4F0B00705873 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F89B27BF4F2500705873 /* Controllers */,
+				43D8F89A27BF4F1E00705873 /* Views */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		43D8F89A27BF4F1E00705873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F8A027BF4FF000705873 /* PostTVCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43D8F89B27BF4F2500705873 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F89C27BF4F8900705873 /* PostsVC.swift */,
+				43D8F89E27BF4FA200705873 /* PostDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		43D8F8A227BF4FFE00705873 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		43D8F8C727BF514F00705873 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				43D8F8C827BF515E00705873 /* Service.swift */,
+				43D8F8CA27BF518900705873 /* PostTVManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +175,10 @@
 			dependencies = (
 			);
 			name = PostsTest;
+			packageProductDependencies = (
+				43D8F89427BF4E8100705873 /* Alamofire */,
+				43D8F89727BF4EF800705873 /* SnapKit */,
+			);
 			productName = PostsTest;
 			productReference = 43D8F87227BF495F00705873 /* PostsTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +207,10 @@
 				Base,
 			);
 			mainGroup = 43D8F86927BF495E00705873;
+			packageReferences = (
+				43D8F89327BF4E8100705873 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				43D8F89627BF4EF800705873 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 43D8F87327BF495F00705873 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +240,15 @@
 			files = (
 				43D8F87A27BF495F00705873 /* ViewController.swift in Sources */,
 				43D8F87627BF495F00705873 /* AppDelegate.swift in Sources */,
+				43D8F89227BF4D1100705873 /* PostsVM.swift in Sources */,
+				43D8F8CB27BF518900705873 /* PostTVManager.swift in Sources */,
+				43D8F8A127BF4FF000705873 /* PostTVCell.swift in Sources */,
+				43D8F88B27BF4C0100705873 /* Alert.swift in Sources */,
 				43D8F87827BF495F00705873 /* SceneDelegate.swift in Sources */,
+				43D8F89D27BF4F8900705873 /* PostsVC.swift in Sources */,
+				43D8F8C927BF515E00705873 /* Service.swift in Sources */,
+				43D8F88E27BF4C3E00705873 /* Post.swift in Sources */,
+				43D8F89F27BF4FA200705873 /* PostDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +466,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43D8F89327BF4E8100705873 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		43D8F89627BF4EF800705873 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43D8F89427BF4E8100705873 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43D8F89327BF4E8100705873 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		43D8F89727BF4EF800705873 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43D8F89627BF4EF800705873 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43D8F86A27BF495E00705873 /* Project object */;
 }
